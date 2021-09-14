@@ -1,0 +1,459 @@
+@import '_content/BlazorTimeline/BlazorTimeline.bundle.scp.css';
+
+/* /Pages/Index.razor.rz.scp.css */
+.yellow-shadow[b-xttvi2q2zg] {
+    box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+}
+
+.section[b-xttvi2q2zg] {
+    position: relative;
+}
+
+.animate-border[b-xttvi2q2zg] {
+    position: absolute;
+}
+
+.left-animate-border[b-xttvi2q2zg] {
+    left: 0;
+    top: 0;
+    height: 0;
+}
+
+.top-animate-border[b-xttvi2q2zg] {
+    top: 0;
+    right: 0;
+    width: 0;
+}
+
+.right-animate-border[b-xttvi2q2zg] {
+    right: 1px;
+    top: 100vh;
+    height: 0;
+}
+
+.section.scrolled .left-animate-border[b-xttvi2q2zg] {
+    animation: animate-left-border-b-xttvi2q2zg 2s 1 linear forwards;
+}
+
+.section.scrolled .top-animate-border[b-xttvi2q2zg] {
+    animation: animate-top-border-b-xttvi2q2zg 2s 1 linear forwards;
+}
+
+.section.scrolled .right-animate-border[b-xttvi2q2zg] {
+    animation: animate-right-border-b-xttvi2q2zg 2s 1 linear forwards;
+}
+
+@keyframes animate-right-border-b-xttvi2q2zg {
+    0% {
+        top: 100vh;
+        height: 0;
+        opacity: 1;
+    }
+
+    20% {
+        top: 0;
+        height: 100vh;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0;
+        height: 100vh;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes animate-top-border-b-xttvi2q2zg {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    20% {
+        width: 0;
+        opacity: 1;
+    }
+
+    40% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes animate-left-border-b-xttvi2q2zg {
+    0% {
+        height: 0;
+        opacity: 1;
+    }
+
+    40% {
+        height: 0;
+        opacity: 1;
+    }
+
+    60% {
+        height: 100vh;
+        opacity: 1;
+    }
+
+    100% {
+        height: 100vh;
+        opacity: 0;
+        display: none;
+    }
+}
+/* /Pages/Timeline.razor.rz.scp.css */
+i[b-t8x6nnzct9] {
+    font-size: 1.5em;
+    color: #000000;
+}
+/* /Shared/Components/CareerCards.razor.rz.scp.css */
+[b-okvl2vr7xx] .animate {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+}
+
+[b-okvl2vr7xx] .animate.animate-in {
+    animation-name: fadeIn;
+}
+/* /Shared/Components/CareerItemCard.razor.rz.scp.css */
+@media screen and (min-width:769px),print {
+    .dates[b-6358ngfhc5] {
+        float: right;
+    }
+}
+/* /Shared/Components/GitHubProjectCards.razor.rz.scp.css */
+[b-er9bz22nib] .column .animate {
+    -webkit-transform: scale3d(.3,.3,.3);
+    transform: scale3d(.3,.3,.3);
+    transition: transform linear 0.5s;
+}
+
+    [b-er9bz22nib] .column .animate.animate-in {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1);
+    }
+/* /Shared/Components/GitHubRepositoryCard.razor.rz.scp.css */
+a > i[b-napgz53evt] {
+    transform: scale(1);
+    transform-origin: bottom left;
+    transition: transform linear 0.4s;
+}
+
+.box:hover a > i[b-napgz53evt] {
+    transform: scale(1.2);
+}
+/* /Shared/Components/Hero.razor.rz.scp.css */
+.hero[b-vujv1cebm4] {
+    position: relative;
+    transition: min-height ease-out 0.4s;
+    overflow: hidden;
+}
+
+    .hero.scrolled[b-vujv1cebm4] {
+        min-height: 0;
+    }
+
+.bg-item-1[b-vujv1cebm4] {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: rotateZ(35deg) translateY(60vh);
+    transform-origin: top right;
+    height: 60vh;
+}
+
+.bg-item-2[b-vujv1cebm4] {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: rotateZ(-35deg) translateY(-60vh);
+    transform-origin: bottom right;
+    height: 60vh;
+}
+
+.title[b-vujv1cebm4] {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hero-body[b-vujv1cebm4] {
+    padding: 0;
+    align-items: stretch;
+}
+
+    .hero-body > .container.main[b-vujv1cebm4] {
+        padding: 60px 15px 15px;
+        transition: width ease-out 1s;
+        width: 100%;
+    }
+
+.scrolled-noflex[b-vujv1cebm4] {
+    flex: 1;
+    transition: flex cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s;
+}
+
+.scrolled-visible[b-vujv1cebm4] {
+    opacity: 0;
+    transition: opacity ease-in 0.8s;
+}
+
+.scrolled .scrolled-height50[b-vujv1cebm4] {
+    min-height: 50vh;
+}
+
+.scrolled .scrolled-noflex[b-vujv1cebm4] {
+    flex: 0;
+}
+
+.scrolled .scrolled-invisible[b-vujv1cebm4] {
+    animation: disappear-b-vujv1cebm4 0.8s 1 ease-out forwards;
+}
+
+@keyframes disappear-b-vujv1cebm4 {
+    0%{
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        display: none;
+    }
+}
+
+.scrolled .scrolled-visible[b-vujv1cebm4] {
+    opacity: 1;
+}
+
+.no-transition[b-vujv1cebm4] {
+    transition: none;
+}
+
+.hovered-flip > *[b-vujv1cebm4] {
+    transition: transform ease 0.6s;
+    transform: rotateY(0);
+}
+
+    .hovered-flip:hover > *[b-vujv1cebm4] {
+        transform: rotateY(360deg);
+    }
+
+        .hovered-flip:hover .fa-github-square[b-vujv1cebm4]:before {
+            content: "\f09b"; /* fa-github */
+        }
+
+        .hovered-flip:hover .fa-linkedin[b-vujv1cebm4]:before {
+            content: "\f0e1"; /* fa-linkedin-in */
+        }
+
+        .hovered-flip:hover .fa-envelope[b-vujv1cebm4]:before {
+            content: "\f2b6"; /* fa-envelope-open */
+        }
+
+.scroll-down-container[b-vujv1cebm4] {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.chevron-container[b-vujv1cebm4] {
+    position: relative;
+    width: 28px;
+    height: 66px;
+}
+
+.chevron[b-vujv1cebm4] {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move-b-vujv1cebm4 3s ease-out infinite;
+}
+
+    .chevron:first-child[b-vujv1cebm4] {
+        animation: move-b-vujv1cebm4 3s ease-out 1s infinite;
+    }
+
+    .chevron:nth-child(2)[b-vujv1cebm4] {
+        animation: move-b-vujv1cebm4 3s ease-out 2s infinite;
+    }
+
+    .chevron[b-vujv1cebm4]:before,
+    .chevron[b-vujv1cebm4]:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: #fff;
+    }
+
+    .chevron[b-vujv1cebm4]:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+    }
+
+    .chevron[b-vujv1cebm4]:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+    }
+
+@keyframes move-b-vujv1cebm4 {
+    25% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+.scroll-down-container-text[b-vujv1cebm4] {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse-b-vujv1cebm4 2s linear alternate infinite;
+}
+
+@keyframes pulse-b-vujv1cebm4 {
+    to {
+        opacity: 1;
+    }
+}
+/* /Shared/Components/SkillBar.razor.rz.scp.css */
+.progress[b-0yqosreae5] {
+    height: .4rem;
+}
+
+.column[b-0yqosreae5] {
+    padding-left: 3px;
+    padding-right: 3px;
+    overflow: hidden;
+}
+
+    .column:first-child[b-0yqosreae5] {
+        padding-left: 0;
+    }
+
+    .column:last-child[b-0yqosreae5] {
+        padding-right: 0;
+    }
+/* /Shared/Components/SkillsCard.razor.rz.scp.css */
+.skills[b-ztxlf7a8n0] {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+[b-ztxlf7a8n0] .animate .progress::-webkit-progress-value {
+    transition: transform 0.2s linear;
+    transform: translateX(-100%);
+}
+
+[b-ztxlf7a8n0] .animate .progress::-moz-progress-bar {
+    transition: transform 0.2s linear;
+    transform: translateX(-100%);
+}
+
+[b-ztxlf7a8n0] .animate .progress::-ms-fill {
+    transition: transform 0.2s linear;
+    transform: translateX(-100%);
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-1::-webkit-progress-value {
+    transition-delay: 0.2s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-1::-moz-progress-bar {
+    transition-delay: 0.2s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-1::-ms-fill {
+    transition-delay: 0.2s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-2::-webkit-progress-value {
+    transition-delay: 0.4s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-2::-moz-progress-bar {
+    transition-delay: 0.4s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-2::-ms-fill {
+    transition-delay: 0.4s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-3::-webkit-progress-value {
+    transition-delay: 0.6s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-3::-moz-progress-bar {
+    transition-delay: 0.6s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-3::-ms-fill {
+    transition-delay: 0.6s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-4::-webkit-progress-value {
+    transition-delay: 0.8s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-4::-moz-progress-bar {
+    transition-delay: 0.8s;
+}
+
+[b-ztxlf7a8n0] .animate .progress.delay-animation-4::-ms-fill {
+    transition-delay: 0.8s;
+}
+
+[b-ztxlf7a8n0] .animate.animate-in .progress::-webkit-progress-value {
+    transform: translateX(0);
+}
+
+[b-ztxlf7a8n0] .animate.animate-in .progress::-moz-progress-bar {
+    transform: translateX(0);
+}
+
+[b-ztxlf7a8n0] .animate.animate-in .progress::-ms-fill {
+    transform: translateX(0);
+}
+/* /Shared/NavBar.razor.rz.scp.css */
+nav.navbar[b-qrqgzzu4j6] {
+    transition: background-color ease-out 0.4s;
+}
+
+body.hero-shown nav.navbar[b-qrqgzzu4j6] {
+    background-color: transparent;
+}
