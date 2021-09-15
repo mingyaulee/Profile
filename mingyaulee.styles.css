@@ -114,6 +114,16 @@ i[b-t8x6nnzct9] {
     font-size: 1.5em;
     color: #000000;
 }
+
+@media screen and (max-width: 768px) {
+    [b-t8x6nnzct9] #timeline .timeline-item .timeline-content {
+        width: calc(100% - 40px);
+    }
+
+        [b-t8x6nnzct9] #timeline .timeline-item .timeline-content[b-brzhsl6bgj]:before {
+            left: 40px;
+        }
+}
 /* /Shared/Components/CareerCards.razor.rz.scp.css */
 [b-okvl2vr7xx] .animate {
     opacity: 0;
