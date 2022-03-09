@@ -5,33 +5,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Portfolio</title>
+    <title>Resume</title>
     <base href="/profile/" />
-    <!--<link href="lib/bulma/css/bulma.min.css" rel="stylesheet" />-->
-    <link href="lib/bulmaswatch/nuclear/bulmaswatch.min.css" rel="stylesheet" />
     <link href="lib/font-awesome/css/all.min.css" rel="stylesheet" />
-    <link href="css/app.css" rel="stylesheet" />
-    <link href="mingyaulee.styles.css" rel="stylesheet" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="lib/animate.css/animate.min.css" />
+    <link href="css/resume.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div id="app">
-        <div class="planet-loader">
-            <div></div>
-        </div>
-    </div>
+<body id="app" class="a4">
+    <h1>Loading...</h1>
+    <script>
+        let removeClassTimeout = 0;
+        const showToolbar = function () {
+            document.body.classList.add("mouse-moving");
+            clearTimeout(removeClassTimeout);
+            removeClassTimeout = setTimeout(function () {
+                document.body.classList.remove("mouse-moving");
+            }, 2000);
+        };
+        document.addEventListener("mousemove", showToolbar);
+        document.addEventListener("mousedown", showToolbar);
 
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
-    </div>
-    <script src="js/app.js"></script>
+        window.toggleShowMargin = function() {
+            if (document.body.classList.contains("show-margin")) {
+                document.body.classList.remove("show-margin");
+            } else {
+                document.body.classList.add("show-margin");
+            }
+        };
+    </script>
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
 
